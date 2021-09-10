@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SituatedQA</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- Favicons -->
+  </head>
+  <body>
+    <nav id="navbar" class="shadow-sm navbar navbar-light bg-light">
+      <div id="navbar-content" class="container">
+        <a class="navbar-brand" href="#">SituatedQA</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="./explorer.html" class="nav-link">Data Explorer</a></li>
+          <li class="nav-item"><a href="./leaderboard.html" class="nav-link">Leaderboard</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main" class="container fs-5">
+      <div class="p-5">
+        <h1 class="text-center display-5 fw-bold">SituatedQA: Incorporating Extra-Linguistic Contexts into QA</h1>
+      </div>
+      <div class="pt-3">
+        <h2 class="display-6 fw-bold">About</h2>
+        <p>
+        Answers to the same question may change depending on the extra-linguistic contexts (when and where the question was asked). We identify such context dependent questions in existing information seeking QA datasets and find that a nontrivial portion of questions in existing datasets are sensitive to extra-linguistic contexts (e.g. 16.5% of Natural Questions). For such context dependent questions, we crowdsource alternative contexts and their corresponding answers to evaluate models' abilities to incorporate extra linguistic contexts. Our study shows that existing models struggle with answering questions about the past or about uncommon locations. We further quantify how existing models, which are trained on QA data collected from the past, fall short of generalizing to answering questions about the present, even when provided with a newer evidence corpus. Our analysis suggests that open retrieval QA benchmark construction should incorporate extra-linguistic contexts to stay relevant in the future.
+        </p>
+        <div>
+          <button class="btn btn-primary btn-lg" type="button">Read the Paper</button>
+          <button class="btn btn-success btn-lg" type="button">Download the Data & Code</button>
+          <button class="btn btn-danger btn-lg" type="button">Read the Datasheet</button>
+        </div>
+      </div>
+      <div class="pt-5">
+        <h2 class="display-6 fw-bold">Citations</h2>
+        <p>If you find our work helpful, please <a href="">cite</a> us.</p>
+        <pre class="citations border bg-light p-2 fs-6">
+@article{ zhang2021situatedqa,
+  title={ {S}ituated{QA}: Incorporating Extra-Linguistic Contexts into {QA} },
+  author={ Zhang, Michael J.Q. and Choi, Eunsol },
+  journal={ EMNLP },
+  year={ 2021 }
+}</pre>
+
+        <p>Please also credit the creators of the datasets we built ours off of: <a href="">NaturalQuestions</a>, <a href="">WebQuestions</a>, <a href="">TyDi-QA</a>, and <a href="">MS MARCO</a>.</p>
+        <pre class="citations border bg-light p-2 fs-6">
+@article{ kwiatkowski2019natural,                                                
+  title={ Natural questions: a benchmark for question answering research},       
+  author={ Kwiatkowski, Tom and Palomaki, Jennimaria and Redfield, Olivia and Collins, Michael and Parikh, Ankur and Alberti, Chris and Epstein, Danielle and Polosukhin, Illia and Devlin, Jacob     and Lee, Kenton and others },
+  journal={ Transactions of the Association for Computational Linguistics },     
+  year={ 2019 }                                                                  
+}                                                                                
+                                                                                 
+@article{clark-etal-2020-tydi,                                                   
+    title = "{T}y{D}i {QA}: A Benchmark for Information-Seeking Question Answering in Typologically Diverse Languages",
+    author = { Clark, Jonathan H. and Choi, Eunsol and Collins, Michael and Garrette, Dan and Kwiatkowski, Tom and Nikolaev, Vitaly and Palomaki, Jennimaria },
+    journal = { Transactions of the Association for Computational Linguistics }, 
+    year = { 2020 },                                                             
+}                                                                                
+                                                                                 
+@inproceedings{Berant2013SemanticPO,                                             
+  title={Semantic Parsing on Freebase from Question-Answer Pairs},               
+  author={Jonathan Berant and Andrew K. Chou and Roy Frostig and Percy Liang},   
+  booktitle={EMNLP},                                                             
+  year={2013}                                                                    
+}                                                                                
+                                                                                 
+@article{Campos2016MSMA,                                                         
+  title={MS MARCO: A Human Generated MAchine Reading COmprehension Dataset},     
+  author={Daniel Fernando Campos and Tri Nguyen and M. Rosenberg and Xia Song and Jianfeng Gao and Saurabh Tiwary and Rangan Majumder and L. Deng and Bhaskar Mitra},
+  journal={ArXiv},                                                               
+  year={2016},                                                                   
+  volume={abs/1611.09268}                                                        
+}</pre>
+      </div>
+      <div class="pt-4">
+        <h2 class="display-6 fw-bold">Contact</h2>
+        <p>
+        For any questions, please contact <a href="https://www.cs.utexas.edu/~mjqzhang/">Michael Zhang</a> or open a <a href="">github issue</a>.
+        </p>
+      </div>
+    </main>
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
