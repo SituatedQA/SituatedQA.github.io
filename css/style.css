@@ -2,6 +2,10 @@
   overflow: auto;
 }
 
+#intro_fig {
+  max-width: 500px;
+}
+
 #main {
   max-width: 1200px;
 }
